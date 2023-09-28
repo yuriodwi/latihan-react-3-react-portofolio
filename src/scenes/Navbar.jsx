@@ -15,6 +15,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     </AnchorLink>
   );
 };
+
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width:768px)");
@@ -61,7 +62,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             <img src="../assets/menu-icon.svg" alt="menu-icon" />
           </button>
         )}
-
         {/* MOBILE MENU POPUP */}
         {!isAboveSmallScreens && isMenuToggled && (
           <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
