@@ -34,11 +34,15 @@ const MySkills = () => {
               <img
                 src="assets/skills-image.png"
                 alt="skills"
-                className="z-10"
+                className="z-10 hover:filter hover:saturate-200 transition duration-500"
               />
             </div>
           ) : (
-            <img src="assets/skills-image.png" alt="skills" className="z-10" />
+            <img
+              src="assets/skills-image.png"
+              alt="skills"
+              className="z-10 hover:filter hover:saturate-200 transition duration-500"
+            />
           )}
         </div>
       </div>

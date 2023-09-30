@@ -20,7 +20,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width:768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-red bg-opacity-90";
+  const navbarBackground = isTopOfPage ? "" : "bg-red";
 
   return (
     <nav
