@@ -1,6 +1,7 @@
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
+      {/* LINKEDIN IMAGE */}
       <a
         className="hover:opacity-50 transition duration-500"
         href="https://www.linkedin.com"
@@ -9,6 +10,8 @@ const SocialMediaIcons = () => {
       >
         <img src="../assets/linkedin.png" alt="linkedin-link" />
       </a>
+
+      {/* TWITTER IMAGE */}
       <a
         className="hover:opacity-50 transition duration-500"
         href="https://www.twitter.com"
@@ -17,6 +20,8 @@ const SocialMediaIcons = () => {
       >
         <img src="../assets/twitter.png" alt="twitter-link" />
       </a>
+
+      {/* FACEBOOK IMAGE */}
       <a
         className="hover:opacity-50 transition duration-500"
         href="https://www.facebook.com"
@@ -25,6 +30,8 @@ const SocialMediaIcons = () => {
       >
         <img src="../assets/facebook.png" alt="facebook-link" />
       </a>
+
+      {/* INSTAGRAM IMAGE */}
       <a
         className="hover:opacity-50 transition duration-500"
         href="https://www.instagram.com"

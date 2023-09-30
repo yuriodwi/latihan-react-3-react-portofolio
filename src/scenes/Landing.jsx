@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -79,7 +80,7 @@ const Landing = ({ setSelectedPage }) => {
             href="#contact"
           >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
-              Let's talk.
+              {`Let's talk.`}
             </div>
           </AnchorLink>
         </motion.div>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const DotGroup = ({ selectedPage, setSelectedPage }) => {
@@ -5,12 +6,15 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
 
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-7">
+      {/* HOME PAGE */}
       <AnchorLink
         className={`${selectedPage === "home" ? selectedStyles : "bg-dark-grey"}
       w-3 h-3 rounded-full`}
         href="#home"
         onClick={() => setSelectedPage("home")}
       />
+
+      {/* SKILLS PAGE */}
       <AnchorLink
         className={`${
           selectedPage === "skills" ? selectedStyles : "bg-dark-grey"
@@ -19,6 +23,8 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         href="#skills"
         onClick={() => setSelectedPage("skills")}
       />
+
+      {/* PROJECTS PAGE */}
       <AnchorLink
         className={`${
           selectedPage === "projects" ? selectedStyles : "bg-dark-grey"
@@ -27,6 +33,8 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         href="#projects"
         onClick={() => setSelectedPage("projects")}
       />
+
+      {/* TESTIMONIALS PAGE */}
       <AnchorLink
         className={`${
           selectedPage === "testimonials" ? selectedStyles : "bg-dark-grey"
@@ -35,6 +43,8 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         href="#testimonials"
         onClick={() => setSelectedPage("testimonials")}
       />
+
+      {/* CONTACT PAGE */}
       <AnchorLink
         className={`${
           selectedPage === "contact" ? selectedStyles : "bg-dark-grey"
