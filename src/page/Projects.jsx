@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
-import LineGradient from "../components/LineGradient";
+import { LineGradient } from "../components";
 
 const container = {
   hidden: {},
@@ -18,7 +18,7 @@ const projectVariant = {
 // tittle = "Project 1"
 // convert = "Project-1"
 const Project = ({ tittle, subtittle }) => {
-  const overlyStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration:300 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+  const overlyStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration:500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTittle = tittle.split(" ").join("-").toLowerCase();
   return (
     <motion.div variants={projectVariant} className="relative">

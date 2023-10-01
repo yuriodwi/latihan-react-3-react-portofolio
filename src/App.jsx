@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
-import DotGroup from "./scenes/DotGroup";
-import Landing from "./scenes/Landing";
 import useMediaQuery from "./hooks/useMediaQuery";
-import Navbar from "./scenes/Navbar";
-// import LineGradient from "./components/LineGradient";
-import MySkills from "./scenes/MySkills";
-import Projects from "./scenes/Projects";
-import Testimonials from "./scenes/Testimonials";
-import Contact from "./scenes/Contact";
-import Footer from "./scenes/Footer";
+import { DotGroup } from "./components";
+import {
+  Contact,
+  Landing,
+  Projects,
+  Skills,
+  Testimonials,
+  Footer,
+  Navbar,
+} from "./page";
+
 const App = () => {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -39,19 +41,15 @@ const App = () => {
         )}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
-      {/* <LineGradient /> */}
       <div className="w-5/6 mx-auto md:h-full">
-        <MySkills />
+        <Skills />
       </div>
-      {/* <LineGradient /> */}
       <div className="w-5/6 mx-auto">
         <Projects />
       </div>
-      {/* <LineGradient /> */}
       <div className="w-5/6 mx-auto md:h-full">
         <Testimonials />
       </div>
-      {/* <LineGradient /> */}
       <div className="w-5/6 mx-auto md:h-full">
         <Contact />
       </div>

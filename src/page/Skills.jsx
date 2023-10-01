@@ -1,8 +1,8 @@
-import LineGradient from "../components/LineGradient";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
+import { LineGradient } from "../components";
+import useMediaQuery from "../hooks/useMediaQuery";
 
-const MySkills = () => {
+const Skills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   return (
     <section id="skills" className="pt-10 pb-24">
@@ -135,4 +135,4 @@ const MySkills = () => {
   );
 };
 
-export default MySkills;
+export default Skills;
