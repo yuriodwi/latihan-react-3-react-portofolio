@@ -22,7 +22,7 @@ const MySkills = () => {
           <p className="font-playfair font-semibold text-4xl mb-5">
             MY <span className="text-red">SKILLS</span>
           </p>
-          <LineGradient width="w-1/3" />
+          <LineGradient width="w-1/6" />
           <p className="mt-10 mb-7">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fugit
             veritatis officia atque magnam nesciunt.

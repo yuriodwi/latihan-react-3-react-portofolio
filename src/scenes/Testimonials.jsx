@@ -5,7 +5,7 @@ const Testimonials = () => {
   const testimonialStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
   return (
     <section id="testimonials" className="pt-32 pb-16">
-      {/* HEADING */}
+      {/* HEADINGS */}
       <motion.div
         className="md:w-1/3 text-center md:text-left"
         initial="hidden"
@@ -20,7 +20,7 @@ const Testimonials = () => {
         <p className="font-playfair font-semibold text-4xl mb-5 text-red">
           TESTIMONIALS
         </p>
-        <LineGradient width="mx-auto w-2/4" />
+        <LineGradient width="w-1/4" />
         <p className="mt-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
           tempore quo error temporibus expedita.
@@ -40,7 +40,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">{``}</p>
+          <p className="font-playfair text-6xl">{`“`}</p>
           <p className="text-center text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
             provident eum sed doloribus vero?
@@ -57,7 +57,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">{``}</p>
+          <p className="font-playfair text-6xl">{`“`}</p>
           <p className="text-center text-xl">
             Lorem ipsum dolor sit, amet consectetur adipisicing.
           </p>
@@ -73,7 +73,7 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">{``}</p>
+          <p className="font-playfair text-6xl">{`“`}</p>
           <p className="text-center text-xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
             ratione sapiente beatae error dolore autem? Quos, nihil minima!
